@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KeepFragmentStateWithNavigation</string>
+    <string name="keep_state_fragment">Keep Fragment state</string>
+    <string name="go_next">Keep state</string>
+    <string name="lose_state">Lose state</string>
+    <string name="keep_state_text">This will keep the state of previous fragment, Press back to check.</string>
+    <string name="lose_state_text">This will lose the state of previous fragment, Press back to check.</string>
+    <string name="_1">1</string>
+</resources>

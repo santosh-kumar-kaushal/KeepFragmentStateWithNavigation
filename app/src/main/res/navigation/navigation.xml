@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@+id/fragment_home">
+
+    <fragment
+            android:id="@+id/fragment_home"
+            android:name="com.santosh.keepfragmentstatewithnavigation.HomeFragment"
+            android:label="Home"
+            tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_keep_fragment_to_register"
+            app:destination="@id/keep_state" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/keep_state"
+        android:name="com.santosh.keepfragmentstatewithnavigation.KeepStateFragment"
+        android:label="Keep state screen"
+        tools:layout="@layout/fragment_keep_state">
+
+        <action
+            android:id="@+id/action_lose_fragment_to_register"
+            app:destination="@id/lose_state" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/lose_state"
+        android:name="com.santosh.keepfragmentstatewithnavigation.LosePreviousStateFragment"
+        android:label="Lose state screen"
+        tools:layout="@layout/fragment_keep_previous_state">
+
+    </fragment>
+
+
+</navigation>
